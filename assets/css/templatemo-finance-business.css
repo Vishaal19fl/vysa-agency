@@ -529,7 +529,7 @@ ul.slick-dots {
 /* Request Form */
 
 .request-form {
-	background-color: #a148f9;
+	background: linear-gradient(135deg, #24013f, #b87bf6);
 	padding: 40px 0px;
 	color: #fff;
 }
@@ -562,12 +562,16 @@ ul.slick-dots {
 
 .service-item img {
 	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	overflow: hidden;
 }
 
 .service-item .down-content {
-	background-color: #f7f7f7;
+	background-color: #f3f3f3;
 	padding: 30px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .service-item .down-content h4 {
