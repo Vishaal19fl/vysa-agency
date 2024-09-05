@@ -564,8 +564,7 @@ ul.slick-dots {
 }
 
 .service-item img {
-	max-width: 350px;
-	max-height: 250px;
+	width: 100%;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	overflow: hidden;
