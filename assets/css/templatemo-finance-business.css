@@ -16,6 +16,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    background-color: #005e19; 
+	color: #fff;
+}
+
+.whatsapp-icon i {
+    margin: 0;
+}
+
 p {
 	margin-bottom: 0px;
 	font-size: 14px;
@@ -83,8 +110,13 @@ a.border-button:hover {
 
 .section-heading em {
 	font-style: normal;
-	color: #a148f9;
-}
+	background: linear-gradient(90deg, #450279 0%, #b177ea 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+  }
+  
 
 .section-heading span {
 	display: block;
@@ -555,7 +587,75 @@ ul.slick-dots {
 }
 
 
+.callback-form {
+	padding: 40px 0;
+  }
+  
+  .section-heading {
+	margin-bottom: 30px;
+  }
+  
+  .contact-form {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 10px;
+  }
+  
+  .ceo-details {
+	background: linear-gradient(135deg, #24013f, #b87bf6);
+	padding: 30px;
+	border-radius: 10px;
+	text-align: left;
+	color: #fff;
+  }
+  
+  .ceo-details h4 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #fff;
+  }
+  
+  .ceo-details p {
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #fff;
+  }
+  
+  .ceo-details p strong {
+	display: block;
+	margin-bottom: 5px;
 
+  }
+  .linkedin-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #0077b5; /* LinkedIn Blue */
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+  }
+  
+  .linkedin-btn i {
+	margin-right: 8px;
+  }
+  
+  .linkedin-btn:hover {
+	background-color: #005582; /* Darker LinkedIn Blue */
+	color: white;
+  }
+  
+  
+  @media (max-width: 768px) {
+	.callback-form .col-md-8, 
+	.callback-form .col-md-4 {
+	  max-width: 100%;
+	  flex: 100%;
+	}
+  }
+  
 
 /* Services */
 
@@ -721,7 +821,7 @@ ul.slick-dots {
 }
 
 .testimonials {
-	margin-top: 140px;
+	
 	background-color: #f7f7f7;
 	padding: 140px 0px;
 }
@@ -755,8 +855,74 @@ ul.slick-dots {
 	margin: 25px auto 0px auto;
 }
 
+.vision-section {
+	background-color: #f4f4f4;
+	padding: 60px 0;
+	text-align: center;
+  }
+  
+  .vision-section .section-heading h2 {
+	font-size: 36px;
+	font-weight: 700;
+	color: #333;
+	text-transform: uppercase;
+  }
+  
+
+  .vision-section .section-heading span {
+	font-size: 18px;
+	color: #777;
+	margin-bottom: 20px;
+	display: block;
+  }
+  
+  .vision-content p {
+	font-size: 18px;
+	color: #555;
+	line-height: 1.8;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+
+.ceo-desk {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  margin-top: 90px;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
 
+.section-heading span {
+  font-size: 18px;
+  color: #777;
+}
+
+.ceo-image img {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: auto;
+}
+
+.ceo-content h4 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.ceo-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
 
 /* Call Back Style */
 
@@ -780,7 +946,7 @@ ul.slick-dots {
 }
 
 .callback-form .contact-form {
-	background-color: #a148f9;
+	background: linear-gradient(135deg, #24013f, #b87bf6);
 	padding: 60px;
 	border-radius: 5px;
 	text-align: center;
