@@ -13,6 +13,14 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick Carousel CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<!-- Slick Carousel Theme (optional) -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<!-- Slick Carousel JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
@@ -64,7 +72,10 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>VYSA TECH</h2></a>
+          <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;" >
+            <img src="/assets/images/final-logo2.png" alt="Vysa Tech Logo" style="height: 40px; margin-right: 10px;">
+            <h2>VYSA TECH</h2>
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -84,18 +95,15 @@ https://templatemo.com/tm-545-finance-business
               <li class="nav-item">
                 <a class="nav-link" href="#more">About Us</a>
               </li>  
-                                      
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Us</a>
               </li>
-
-              
-             
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
@@ -353,7 +361,7 @@ https://templatemo.com/tm-545-finance-business
               <div class="row">
                 <div class="col-md-6">
                   <div class="left-image">
-                    <img src="/assets/images/vysalogo.jpg" alt="">
+                    <img src="/assets/images/logo-poster.png" alt="">
                   </div>
                 </div>
                 <div class="col-md-6 align-self-center">
@@ -384,13 +392,8 @@ https://templatemo.com/tm-545-finance-business
               <span>A message from our CEO</span>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="ceo-image">
-              <img src="/assets/images/team_01.jpg" alt="CEO Image" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-md-6 align-self-center">
-            <div class="ceo-content">
+          <div class="col-md-12">
+            <div class="ceo-content text-center"> <!-- Centered content -->
               <h4>Mr. V. Sundar</h4>
               <p>With over 24 years of extensive experience in the software industry, Mr. V. Sundar brings unparalleled expertise and leadership to Vysa Tech. His career spans across top multinational companies, where he specialized in software development, optimization, and cutting-edge technological solutions.</p>
               <p>Mr. Sundar’s deep understanding of the digital landscape, combined with his passion for innovation, drives Vysa Tech’s vision of delivering high-impact digital marketing solutions. His strategic insights and commitment to excellence ensure that Vysa Tech remains at the forefront of the digital revolution, helping businesses achieve transformative growth in a competitive market.</p>
@@ -400,6 +403,7 @@ https://templatemo.com/tm-545-finance-business
         </div>
       </div>
     </div>
+    
     
 
     <div class="testimonials" id="testimonials">
@@ -412,51 +416,93 @@ https://templatemo.com/tm-545-finance-business
             </div>
           </div>
           <div class="col-md-12">
-            <div class="owl-testimonials owl-carousel">
-              
+            <!-- Slick carousel -->
+            <div class="slick-testimonials">
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>Anita Patel</h4>
-                  <span>CEO of GreenLeaf Organics</span>
-                  <p>"Vysatech Solutions significantly boosted our website traffic and
-                    sales with their expert SEO and content strategies."</p>
+                  <div class="box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9NjLNkEwkkC8KkJJyb0MksnErjd4LeqQiIg&s" alt="">
+                    <h4>Anita Patel</h4>
+                    <span>CEO of GreenLeaf Organics</span>
+                    <p>"Vysatech Solutions significantly boosted our website traffic and sales with their expert SEO and content strategies."</p>
+                  </div>
                 </div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9NjLNkEwkkC8KkJJyb0MksnErjd4LeqQiIg&s" alt="">
               </div>
-              
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>Mark Johnson</h4>
-                  <span>Founder of Tech Innovate</span>
-                  <p>"Their social media and targeted ads have dramatically
-                    increased our brand's visibility and customer engagement."</p>
+                  <div class="box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyR-eY6XruEswHpvpwCyz_GFbSd8odEyCXng&s" alt="">
+                    <h4>Mark Johnson</h4>
+                    <span>Founder of Tech Innovate</span>
+                    <p>"Their social media and targeted ads have dramatically increased our brand's visibility and customer engagement."</p>
+                  </div>
                 </div>
-                <img src="./assets/images/team_01.jpg" alt="">
               </div>
-              
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>David Wood</h4>
-                  <span>Chief Accountant</span>
-                  <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
+                  <div class="box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4_pK9cFGiLDwzpIIH1q7PQFZtU4D46bVEA&s" alt="">
+                    <h4>Emily Wong</h4>
+                    <span>Marketing Director at Urban Bliss</span>
+                    <p>"Vysatech Solutions delivered outstanding digital marketing
+                      services that helped us achieve our growth goals."</p>
+                  </div>
                 </div>
-                <img src="http://placehold.it/60x60" alt="">
               </div>
-              
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>Andrew Boom</h4>
-                  <span>Marketing Head</span>
-                  <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
+                  <div class="box">
+                    <img src="https://media.licdn.com/dms/image/v2/C560BAQFcl6cCId4weQ/company-logo_200_200/company-logo_200_200/0/1630617659369/innova_tech_solutions_logo?e=2147483647&v=beta&t=9jpuyT--z0V5FPZoJ7g5ADCZLa6yVmK5TyiVHsRLDRc" alt="Customer Image">
+                    <h4>Michael Brown</h4>
+                    <span>CTO of Innovatech</span>
+                    <p>"Vysatech Solutions delivered outstanding results for our PPC campaigns. Their attention to detail and strategic approach significantly increased our ROI."</p>
+                  </div>
                 </div>
-                <img src="http://placehold.it/60x60" alt="">
               </div>
-              
             </div>
           </div>
         </div>
       </div>
     </div>
+    
+    
+    
+    
+    
+    <script>
+      $(document).ready(function(){
+        $('.slick-testimonials').slick({
+          infinite: true,
+          slidesToShow: 3,  // Number of items to show at once
+          slidesToScroll: 1,
+          autoplay: true,   // Enables automatic sliding
+          autoplaySpeed: 3000, // Speed of slide transition (in milliseconds)
+          arrows: false,    // Hides navigation arrows
+          dots: true,       // Shows dots for navigation
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2, // Show 2 items for medium screens
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1, // Show 1 item for small screens
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      });
+    </script>
+    
+    
+    
+    
+      
 
     <div class="callback-form" id="contact">
       <div class="container">
@@ -468,31 +514,36 @@ https://templatemo.com/tm-545-finance-business
               <span>Fill this form and we will reach you out!</span>
             </div>
             <div class="contact-form">
-              <form id="contact" action="" method="post">
+              <form id="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfUWecKUxM7NTwapOjtxCytwY1TLQAkiFbVa3HI-gxW_W9rlQ/formResponse" method="post">
                 <div class="row">
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                      <input name="entry.2005620554" type="text" class="form-control" id="name" placeholder="Full Name" required="">
                     </fieldset>
                   </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="col-lg-8 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                      <input name="emailAddress" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                      <input name="entry.1166974658" type="text" class="form-control" id="phone" placeholder="WhatsApp Number" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="border-button">Send Message</button>
+                      <input name="entry.261424800" type="text" class="form-control" id="service" placeholder="Enter the service you want" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="entry.1065046570" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="border-button">Submit</button>
                     </fieldset>
                   </div>
                 </div>
@@ -525,8 +576,7 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="owl-partners owl-carousel">
-            
+            <div class="partner-list">
               <div class="partner-item">
                 <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-15.png" title="1" alt="1">
               </div>
@@ -540,14 +590,24 @@ https://templatemo.com/tm-545-finance-business
               </div>
               
               <div class="partner-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/1024px-Logo_of_YouTube_%282015-2017%29.svg.png" title="4" alt="4">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/027/395/710/small/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" title="4" alt="4" width="100px">
               </div>
               
-              <div class="partner-item">
-                <img src="assets/images/client-01.png" title="5" alt="5">
-              </div>
+              
               
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="thank-you">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Thank You for Visiting!</h2>
+            <p>We appreciate your time and interest in our website. If you have any questions or need further information, feel free to contact us.</p>
           </div>
         </div>
       </div>
@@ -630,6 +690,21 @@ https://templatemo.com/tm-545-finance-business
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/accordions.js"></script>
+
+    
+
+<!-- jQuery (required by Slick) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Slick JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field

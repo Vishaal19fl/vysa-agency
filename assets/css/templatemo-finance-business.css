@@ -33,6 +33,30 @@ body {
     z-index: 1000;
     transition: background-color 0.3s ease;
 }
+.custom-nav {
+	text-align: center;
+	margin: 20px 0;
+  }
+  
+  .custom-prev, .custom-next {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	margin: 0 5px;
+  }
+  
+  .custom-prev:hover, .custom-next:hover {
+	background-color: #555;
+  }
+  
+  .slick-testimonials .testimonial-item {
+	text-align: center;
+	padding: 20px;
+  }
+  
+  
 
 .whatsapp-icon:hover {
     background-color: #005e19; 
@@ -291,7 +315,7 @@ header .navbar {
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
 }
 .background-header .navbar-brand h2 {
-	color: #a148f9!important;
+	color: #59268c!important;
 }
 .background-header .navbar-nav a.nav-link {
 	color: #1e1e1e!important;
@@ -567,6 +591,7 @@ ul.slick-dots {
 	background: linear-gradient(135deg, #24013f, #b87bf6);
 	padding: 40px 0px;
 	color: #fff;
+	margin-top: 0px;
 }
 
 .request-form h4 {
@@ -607,6 +632,7 @@ ul.slick-dots {
 	border-radius: 10px;
 	text-align: left;
 	color: #fff;
+	margin-top: 10px;
   }
   
   .ceo-details h4 {
@@ -630,8 +656,8 @@ ul.slick-dots {
   .linkedin-btn {
 	display: inline-block;
 	padding: 10px 20px;
-	background-color: #0077b5; /* LinkedIn Blue */
-	color: white;
+	background-color: #ffffff; /* LinkedIn Blue */
+	color: rgb(0, 0, 0);
 	border-radius: 5px;
 	text-decoration: none;
 	font-weight: bold;
@@ -694,7 +720,7 @@ ul.slick-dots {
 
 .fun-facts {
 	margin-top: 140px;
-	background-image: url(../images/fun-facts-bg.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/bg1.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -825,35 +851,49 @@ ul.slick-dots {
 	background-color: #f7f7f7;
 	padding: 140px 0px;
 }
-.testimonial-item .inner-content {
+.testimonial-item {
 	text-align: center;
-	background-color: #fff;	
-	padding: 30px;
-	border-radius: 5px;
-}
-.testimonial-item p {
-	font-size: 14px;
-	font-weight: 400;
-}
-.testimonial-item h4 {
-	font-size: 19px;
-	font-weight: 700;
-	color: #1e1e1e;
-	letter-spacing: 0.5px;
-	margin-bottom: 0px;
-}
-.testimonial-item span {
-	display: inline-block;
-	margin-top: 8px;
-	font-weight: 600;
-	font-size: 14px;
-	color: #a148f9;
-}
-.testimonial-item img {
-	max-width: 60px;
+	padding: 20px;
+  }
+  
+  .slick-testimonials {
+	margin-top: 20px;
+  }
+  
+  
+  .testimonial-item .box {
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-item img {
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
-	margin: 25px auto 0px auto;
-}
+	margin-bottom: 15px;
+  }
+  
+  
+  .testimonial-item h4 {
+	margin-top: 10px;
+	font-size: 1.2rem;
+	font-weight: bold;
+  }
+  
+  .testimonial-item span {
+	font-size: 0.9rem;
+	color: #666;
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  .testimonial-item p {
+	font-size: 0.95rem;
+	color: #333;
+  }
+  
 
 .vision-section {
 	background-color: #f4f4f4;
@@ -1061,16 +1101,56 @@ ul.slick-dots {
 	padding: 60px 0px;
 }
 
-.partners .owl-item {
+.partner-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* Centers items horizontally */
+	gap: 70px; /* Adjust spacing between items as needed */
+  }
+  
+  .partner-item {
+	flex: 1 1 auto; /* Allows items to grow and shrink as needed */
+	max-width: 150px; /* Limits the maximum width of each item */
+	display: flex;
+	align-items: center; /* Centers image vertically */
+	justify-content: center; /* Centers image horizontally */
+  }
+  
+  .partner-item img {
+	max-width: 100%;
+	height: auto; /* Maintains aspect ratio */
+  }
+  
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+	.partner-item {
+	  max-width: 120px; /* Adjust width for smaller screens */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.partner-item {
+	  max-width: 100px; /* Further adjust width for very small screens */
+	}
+  }
+  
+  .thank-you {
+	padding: 80px 0;
+	background-color: #ffffff; /* Light background color */
 	text-align: center;
-	cursor: pointer;
-}
-
-.partners .partner-item img {
-	max-width: 156px;
-	margin: auto;
-}
-
+  }
+  
+  .thank-you h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+  }
+  
+  .thank-you p {
+	font-size: 16px;
+	color: #333;
+  }
+  
 
 
 /* Footer Style */
