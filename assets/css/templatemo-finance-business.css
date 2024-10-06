@@ -1322,13 +1322,25 @@ footer .contact-form button.filled-button:hover {
 
 
 .page-heading {
-	text-align: center;
-	background-image: url(../images/page-heading-bg.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 230px 0px 150px 0px;
-	color: #fff;
+    text-align: center;
+    background-image: url("https://t3.ftcdn.net/jpg/08/11/26/38/360_F_811263894_XYFjlPILiqDopxTdrChPaUep0tCoXWLl.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 230px 0 150px;
+    color: #fff;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+}
+
+.page-heading:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black gradient overlay */
+    z-index: 1; /* Ensure this is below the text */
 }
 
 .page-heading h1 {
@@ -1337,6 +1349,8 @@ footer .contact-form button.filled-button:hover {
 	font-weight: 700;
 	letter-spacing: 2px;
 	margin-bottom: 18px;
+	z-index: 2;
+	position: relative;
 }
 
 .page-heading span {
@@ -1345,9 +1359,23 @@ footer .contact-form button.filled-button:hover {
 	letter-spacing: 1px;
 	color: #fff;
 	display: block;
+	z-index: 2;
+	position: relative;
 }
 
+.course-outcomes-heading {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em; /* Adjust the font size */
+    color: #5e4c9a; /* Example color */
+	font-weight: bold;
+}
 
+.tabs-content img{
+	width: 60%;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
 /* team */
 
 .team {
@@ -1563,6 +1591,11 @@ footer .contact-form button.filled-button:hover {
 	}
 	.contact-item {
 		margin-bottom: 30px;
+	}
+	.tabs-content img{
+		width: 100%;
+		border-radius: 15px;
+		margin-bottom: 15px;
 	}
 }
 
